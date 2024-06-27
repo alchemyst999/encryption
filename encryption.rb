@@ -9,6 +9,11 @@ puts "What is the way to encrypt it?
 
 choice = gets.to_i
 
+until choice.between?(1, 2)
+    puts "Please, choose 1 or 2:"
+    choice = gets.to_i
+end
+
 puts "\nResult:"
 
 case choice
